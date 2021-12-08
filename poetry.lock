@@ -58,6 +58,22 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "flask-admin"
+version = "1.5.8"
+description = "Simple and extensible admin interface framework for Flask"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = ">=0.7"
+wtforms = "*"
+
+[package.extras]
+aws = ["boto"]
+azure = ["azure-storage-blob"]
+
+[[package]]
 name = "itsdangerous"
 version = "2.0.1"
 description = "Safely pass data to untrusted environments and back."
@@ -177,10 +193,24 @@ python-versions = ">=3.6"
 [package.extras]
 watchdog = ["watchdog"]
 
+[[package]]
+name = "wtforms"
+version = "3.0.0"
+description = "Form validation and rendering for Python web development."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+MarkupSafe = "*"
+
+[package.extras]
+email = ["email-validator"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "6d9db3a441b3b0e6de244fe7a9c0371f98e9fa3149c1bc0415c56cfc54d85441"
+content-hash = "47ae8252e37e31291644dda2daed264d16322bc74cd37bb74ddbbea5a440b827"
 
 [metadata.files]
 atomicwrites = [
@@ -202,6 +232,9 @@ colorama = [
 flask = [
     {file = "Flask-2.0.2-py3-none-any.whl", hash = "sha256:cb90f62f1d8e4dc4621f52106613488b5ba826b2e1e10a33eac92f723093ab6a"},
     {file = "Flask-2.0.2.tar.gz", hash = "sha256:7b2fb8e934ddd50731893bdcdb00fc8c0315916f9fcd50d22c7cc1a95ab634e2"},
+]
+flask-admin = [
+    {file = "Flask-Admin-1.5.8.tar.gz", hash = "sha256:eb06a1f31b98881dee53a55c64faebd1990d6aac38826364b280df0b2679ff74"},
 ]
 itsdangerous = [
     {file = "itsdangerous-2.0.1-py3-none-any.whl", hash = "sha256:5174094b9637652bdb841a3029700391451bd092ba3db90600dea710ba28e97c"},
@@ -313,4 +346,8 @@ wcwidth = [
 werkzeug = [
     {file = "Werkzeug-2.0.2-py3-none-any.whl", hash = "sha256:63d3dc1cf60e7b7e35e97fa9861f7397283b75d765afcaefd993d6046899de8f"},
     {file = "Werkzeug-2.0.2.tar.gz", hash = "sha256:aa2bb6fc8dee8d6c504c0ac1e7f5f7dc5810a9903e793b6f715a9f015bdadb9a"},
+]
+wtforms = [
+    {file = "WTForms-3.0.0-py3-none-any.whl", hash = "sha256:232dbb0094847dca2f45c72136b5ca1d5dca2a3e24ccd2229823b8b74b3c6698"},
+    {file = "WTForms-3.0.0.tar.gz", hash = "sha256:4abfbaa1d529a1d0ac927d44af8dbb9833afd910e56448a103f1893b0b176886"},
 ]
