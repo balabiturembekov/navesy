@@ -1,13 +1,13 @@
 from flask import Flask, render_template
-from flask import request
+from flask_admin import Admin
 
 
 app = Flask(__name__)
+admin = Admin(app)
 
 
 @app.route('/', methods=['GET'])
 def index():
-    user_ip = request.remote_addr
     return render_template('index.html')
 
 
