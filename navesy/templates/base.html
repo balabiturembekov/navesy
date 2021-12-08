@@ -1,12 +1,210 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ====== Favicon ======-->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <!-- ====== Remix Icons CDN ======-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- ====== Main Style Css ======-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="" media="all" />
     <title>navesy-almaty.kz - Изготовление Навесов, Ворота и др.</title>
 </head>
 <body>
-    <h1>Базовый шаблон</h1>
+    <!-- ====== Header ======-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-leaf-line nav__logo-icon"></i><sup class="too">TOO</sup>Daulet  Temir
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">О компаний</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Проекты</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- /#header.header -->
+    
+    <!-- ===== MAIN ===== -->
+    <main>
+        <!-- ====== Home Section ======-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="{{ url_for('static', filename='img/home.jpg') }}" alt="Сварщики" class="home__img">
+                
+                <div class="home__data">
+                    <h1 class="home__title">
+                       Навесы, Ворота и другие изделия любой сложности
+                    </h1>
+                    <p class="home__description">
+                        За время нашей деятельности мы успешно смонтировали и установили более полутысячи объектов по всей Алматы и Алматинской области.
+                    </p>
+                    <a href="#about" class="button button--flex">
+                        О компаний <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+                
+                <div class="home__social">
+                    <span class="home__social-follow">
+                        Подпишись
+                    </span>
+                    
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.home__container container grid -->
+        </section>
+        <!-- /#home.home -->
+        
+        <!-- ====== About Section ======-->
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+                <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="" class="about__img">
+                
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        О компаний
+                    </h2>
+                    
+                    <p class="about__description">
+                        Наша компания занимается изготовлением и монтажом всех типов навесов. На сегодняшний день – Navesy-Almaty это передовая компания, которая представлена на рынке навесов всех конфигураций с 2010 года. Развивая свою деятельность, начиная с 2010 года мы достигли следующих результатов:
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Большое количество сданных объектов
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Собрали под своим началом опытных мастеров
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            У нас есть все необходимое для строительства и монтажных работ «Под ключ» , поскольку мы одни из лучших в своем деле!
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Также, у нас есть специалисты, которые изготавливают заборы, навесы и ворота и их компоненты.
+                        </p>
+                        
+                    </div>
+                    
+                    <a href="" class="button--link button--flex">
+                        Портфолио <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- /#about.about section container -->
+        
+    </main>
+    
+    
+    <!-- ====== Footer ======-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="ri-leaf-line footer__logo-icon"></i> <sup class="too">TOO</sup>Daulet Temir
+                </a>
+                
+                <h3 class="footer__title">
+                Подпишись на наши рассылки <br> что бы быть в курсе
+                </h3>
+                <form action="">
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Введите ваш email" class="footer__input">
+                        
+                        <button class="button button--flex footer__button">
+                            Подписаться <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Наш адрес
+                </h3>
+                
+                <ul class="footer__data">
+                    <li class="footer__information">
+                        Казахстан - Алматы
+                    </li>
+                    
+                    <li class="footer__information">
+                        мкр.Саялы ул.Аршалы 58/2
+                    </li>
+                    
+                    <li class="footer__information">
+                        + 7 747 600 3876
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Свяжись с нами
+                </h3>
+                
+                <ul class="footer__data">
+                    <li class="footer__information">
+                        + 7 747 600 3876
+                    </li>
+                    
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                    </div>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <p class="footer__copy">
+            &#169; <sup>TOO</sup> Daulet Temir. Все права зарезервированы
+        </p>
+    </footer>
+    <!-- /.footer -->
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
