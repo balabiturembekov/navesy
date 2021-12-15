@@ -18,13 +18,13 @@
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Raleway", Sans-Serif;
-    --big-font-size: 2.25rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.2rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: .968rem;
-    --small-font-size: .833rem;
-    --smaller-font-size: .95rem;
+    --big-font-size: 2.27rem;
+    --h1-font-size: 1.7rem;
+    --h2-font-size: 1.4rem;
+    --h3-font-size: 1.27rem;
+    --normal-font-size: 1.1rem;
+    --small-font-size: .835rem;
+    --smaller-font-size: .97rem;
     
     /*========== Font Weight ==========*/
     --font-bold: 700;
@@ -46,13 +46,13 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 968px) {
     :root {
-        --big-font-size: 3.5rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+        --big-font-size: 3.8rem;
+        --h1-font-size: 2.28rem;
+        --h2-font-size: 1.8rem;
+        --h3-font-size: 1.28rem;
+        --normal-font-size: 1.4rem;
+        --small-font-size: .878rem;
+        --smaller-font-size: .818rem;
     }
 }
 
@@ -78,7 +78,6 @@ textarea {
 body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
-    /*background: linear-gradient(80deg, #59bd96, #74c9ce);*/
     background: var(--body-color);
     color: var(--text-color);
     font-size: var(--normal-font-size);
@@ -137,6 +136,22 @@ img {
     display: grid;
 }
 
+/*========== Flash form message ==========*/
+.flash {
+    position: relative;
+    padding: 10px 25px;
+    background-color: var(--main-color);
+    color: #fff;
+    margin: 30px 0;
+    border-radius: .5rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.flash_close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
 
 /*========== Header ==========*/
 .header {
@@ -146,7 +161,7 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    transition: .4s; /*For animation dark mode*/
+    transition: .4s;
 }
 /*========== Nav ==========*/
 .nav {
@@ -187,7 +202,7 @@ img {
 
 .nav__toggle {
     display: inline-flex;
-    font-size: 1.25rem;
+    font-size: 1.27rem;
     cursor: pointer;
 }
 
@@ -219,7 +234,7 @@ img {
 .nav__list {
     display: flex;
     flex-direction: column;
-    row-gap: 1.5rem;
+    row-gap: 1.8rem;
 }
 
 .nav__link {
@@ -282,48 +297,6 @@ img {
 
 .home__description {
     margin-bottom: var(--mb-2-5);
-}
-
-.home__social {
-    position: absolute;
-    top: 2rem;
-    right: -1rem;
-    display: grid;
-    justify-items: center;
-    row-gap: 3.5rem;
-}
-
-.home__social-follow {
-    position: relative;
-    font-size: var(--smaller-font-size);
-    color: var(--main-color);
-    transform: rotate(90deg);
-}
-
-.home__social-follow:after {
-    content: '';
-    position: absolute;
-    width: 1rem;
-    height: 2px;
-    background-color: var(--main-color);
-    right: -45%;
-    top: 50%;
-}
-
-.home__social-links {
-    display: inline-flex;
-    flex-direction: column;
-    row-gap: .25rem;
-}
-
-.home__social-link {
-    font-size: 1rem;
-    color: var(--main-color);
-    transition: .3s;
-}
-
-.home__social-link:hover {
-    transform: translateX(.25rem);
 }
 
 /*========== Buttons ==========*/
@@ -578,14 +551,14 @@ img {
 /*=============== Media Queryes ===============*/
 
 /*For small devices*/
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .conatiner {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
     }
     
     .home__img {
-        width: 180px;
+        width: 280px;
     }
     
     .home__title {
@@ -602,7 +575,7 @@ img {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
     body {
         margin: 0;
     }
@@ -659,7 +632,7 @@ img {
 
 
 /*For large devices*/
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
     .container {
         margin-left: auto;
         margin-right: auto;
@@ -703,7 +676,7 @@ img {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .about__container {
         column-gap: 7rem;
     }

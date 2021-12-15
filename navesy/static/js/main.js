@@ -58,3 +58,10 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+const flash = document.getElementById('flash');
+const flash_message = document.getElementById('flash-message-icon');
+
+flash_message.addEventListener('click', function() {
+    flash.style.display = 'none';
+});
