@@ -109,7 +109,6 @@ flash_message.addEventListener('click', function() {
 
 let homeSwiper = new Swiper('.home-swiper', {
   // Optional parameters
-  spaceBetween: 30,
   loop: true,
 
   // If we need pagination

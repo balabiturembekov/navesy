@@ -193,7 +193,38 @@ the website, in dark theme
     right: 5px;
     top: 10px;
 }
+.visible-xs {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--first-color);
+    z-index: var(--z-fixed);
+}
+.callback-wrapper-mediaguru-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.callback-item {
+    
+}
 
+.callback-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .5rem;
+    color: #FFF;
+}
+
+.callback-wrapper_icon {
+    color: #FFF;
+    font-size: 2.15rem;
+}
 /*=============== HEADER ===============*/
 .header{
   width: 100%;
@@ -311,7 +342,7 @@ the website, in dark theme
 }
 .swiper {
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 /*=============== HOME ===============*/
@@ -667,7 +698,7 @@ the website, in dark theme
 
 /* Show Scroll Up*/
 .show-scroll{
-  bottom: 3rem;
+  bottom: 8rem;
 }
 
 /*=============== SCROLL BAR ===============*/
