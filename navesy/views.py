@@ -3,18 +3,19 @@ from app import app
 from flask import render_template, redirect, request, url_for, flash
 
 
+FLASH_SUCCES_MESSAGE = 'Сообщение отправлено'
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 
-FLASH_SUCCES_MESSAGE = 'Сообщение отправлено'
-FLASH_ERROR_MESSAGE = 'Ошибка при отправке данных'
 
 
 @app.route('/send', methods=['POST'])
 def sending_email():
-    """ Коннтроллер контактной формы на сайте """
+    """ Контроллер контактной формы на сайте """
     if request.method == "POST":
         email = request.form['email']
         subject = request.form['subject']
