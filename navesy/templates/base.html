@@ -7,6 +7,9 @@
     <!-- ====== Google Search Console Verification ======-->
     <meta name="google-site-verification" content="4QoM-txKXZ7p5ZiDHdhJPRAoQLQswWS_P0Z6QpbRXSQ" />
     
+    <!-- ====== Swiper Css Link ======-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    
     <!-- ====== Favicon ======-->
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon" />
     <!-- ====== Remix Icons CDN ======-->
@@ -16,41 +19,44 @@
     <title>{% block title %} Навес - Готовые конструкции в Алматы - navesy-almaty.kz {% endblock %}</title>
 </head>
 <body>
-    <!-- ====== Header ======-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <i class="ri-leaf-line nav__logo-icon"></i><sup class="too">TOO</sup>Daulet  Temir
-            </a>
-            
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Главная</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">О компаний</a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#gallery" class="nav__link">Примеры</a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Контакты</a>
-                    </li>
-                </ul>
-                
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
+    <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> too daulet temir
+                </a>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
-        </nav>
-    </header>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">О компаний</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Примеры</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
     <!-- /#header.header -->
     
     <!-- ===== MAIN ===== -->
@@ -62,78 +68,82 @@
     
     <!-- ====== Footer ======-->
     <footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__content">
-                <a href="#" class="footer__logo">
-                    <i class="ri-leaf-line footer__logo-icon"></i> <sup class="too">TOO</sup>Daulet Temir
-                </a>
-                
-                <h3 class="footer__title">
-                Подпишись на наши рассылки <br> что бы быть в курсе
-                </h3>
-                <form action="">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> ТОО Даулет Темiр
+                    </a>
+
+                    <h3 class="footer__title">
+                        Подписывайтесь на наши <br> еженедельные новости
+                    </h3>
+
                     <div class="footer__subscribe">
-                        <input type="email" placeholder="Введите ваш email" class="footer__input">
-                        
+                        <input type="email" placeholder="Ваш email" class="footer__input">
+
                         <button class="button button--flex footer__button">
-                            Подписаться <i class="ri-arrow-right-up-line button__icon"></i>
+                            Подписаться
+                            <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
                     </div>
-                </form>
-            </div>
-            
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    Наш адрес
-                </h3>
-                
-                <ul class="footer__data">
-                    <li class="footer__information">
-                        Казахстан - Алматы
-                    </li>
-                    
-                    <li class="footer__information">
-                        мкр.Самгау ул.Аршалы 58/2
-                    </li>
-                    
-                    <li class="footer__information">
-                        + 7 747 600 3876
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    Свяжись с нами
-                </h3>
-                
-                <ul class="footer__data">
-                    <li class="footer__information">
-                        + 7 747 600 3876
-                    </li>
-                    
-                    <div class="footer__social">
-                        <a href="https://www.facebook.com/" class="footer__social-link">
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Наш адрес</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Алматы - Казахстан</li>
+                        <li class="footer__information">мкр.Самгау</li>
+                        <li class="footer__information">ул. Аршалы 58/2</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Свяжитесь с нами</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+7 747 600 3876</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
                                 <i class="ri-facebook-fill"></i>
                             </a>
-                            <a href="https://instagram.com/too_daulet_temir" class="footer__social-link">
+                            <a href="https://www.instagram.com/" class="footer__social-link">
                                 <i class="ri-instagram-line"></i>
                             </a>
                             <a href="https://twitter.com/" class="footer__social-link">
                                 <i class="ri-twitter-fill"></i>
                             </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Мы принимаем платежи со всех карт
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="{{ url_for('static', filename='img/card1.png') }}" alt="" class="footer__card">
+                        <img src="{{ url_for('static', filename='img/card2.png') }}" alt="" class="footer__card">
+                        <img src="{{ url_for('static', filename='img/card3.png') }}" alt="" class="footer__card">
+                        <img src="{{ url_for('static', filename='img/card4.png') }}" alt="" class="footer__card">
                     </div>
-                </ul>
+                </div>
             </div>
-            
-        </div>
-        
-        <p class="footer__copy">
-            &#169; <sup>TOO</sup> Daulet Temir. Все права зарезервированы
-        </p>
-    </footer>
+
+            <p class="footer__copy">&#169; ТОО Даулет Темiр. Все права зарезервированы.</p>
+        </footer>
     <!-- /.footer -->
     
+    <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+    <!-- ====== Swiper Js ======-->
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    
+    <!-- ====== Main Js ======-->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>

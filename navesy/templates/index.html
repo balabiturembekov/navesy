@@ -1,102 +1,118 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- ====== Home Section ======-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="{{ url_for('static', filename='img/home.jpg') }}" alt="Сварщики" class="home__img">
-                
-                <div class="home__data">
-                    <h1 class="home__title">
-                       Навесы, Ворота и другие изделия любой сложности
-                    </h1>
-                    <p class="home__description">
-                        За время нашей деятельности мы успешно смонтировали и установили более полутысячи объектов по всей Алматы и Алматинской области.
-                    </p>
-                    <a href="#about" class="button button--flex">
-                        О компаний <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
+        <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="{{ url_for('static', filename='img/home.jpg') }}" alt="Три сварщика" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Изготовление навесов <br> в Алматы и Алматинской области
+                        </h1>
+                        <p class="home__description">
+                            Выезд специалиста, бесплатная консультация, замер и установка
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            О компаний <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- /.home__container container grid -->
-        </section>
+            </section>
         <!-- /#home.home -->
         
-        <!-- ====== About Section ======-->
-        <section class="about section container" id="about">
-            <div class="about__container grid">
-                <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="Человек у печи" class="about__img">
-                
-                <div class="about__data">
-                    <h2 class="section__title about__title">
-                        О компаний
-                    </h2>
-                    
-                    <p class="about__description">
-                        Наша компания занимается изготовлением и монтажом всех типов навесов. На сегодняшний день – Navesy-Almaty это передовая компания, которая представлена на рынке навесов всех конфигураций с 2010 года. Развивая свою деятельность, начиная с 2010 года мы достигли следующих результатов:
-                    </p>
+        <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="Человек у печи" class="about__img">
 
-                    <div class="about__details">
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Большое количество сданных объектов
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Почему стоит выбрать нашу компанию "И" <br> заказать навес именно у нас
+                        </h2>
+
+                        <p class="about__description">
+                            За время нашей деятельности мы успешно смонтировали и установили более полутысячи объектов по всей Алмате и Алматинской области.  Наша компания занимается изготовлением и монтажом всех типов навесов. На сегодняшний день – Navesy-Almaty это передовая компания, которая представлена на рынке навесов всех конфигураций с 2010 года. Развивая свою деятельность, начиная с 2010 года мы достигли следующих 
                         </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Собрали под своим началом опытных мастеров
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            У нас есть все необходимое для строительства и монтажных работ «Под ключ» , поскольку мы одни из лучших в своем деле!
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Также, у нас есть специалисты, которые изготавливают заборы, навесы и ворота и их компоненты.
-                        </p>
-                        
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Большое количество сданных объектов.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Собрали под своим началом опытных мастеров.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                У нас есть всё необходимое для строительства и монтажных работ под  "Под Ключ", поскольку мы одни из лучших в своем деле.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Также, у нас есть специалисты которые изготавливают заборы, ворота и их компоненты.
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                            Примеры <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
                     </div>
-                    
-                    <a href="#gallery" class="button--link button--flex">
-                        Примеры <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
                 </div>
-            </div>
-        </section>
+            </section>
         <!-- /#about.about section container -->
         
         <!-- ====== Gallery Section ======-->
         <section class="gallery section container" id="gallery">
             <h2 class="section__title">Примеры</h2>
-            <div class="gallery_container grid">
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/2.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/3.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/4.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/5.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/6.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/7.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/8.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/9.jpg') }}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{ url_for('static', filename='img/10.jpg') }}" alt="">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/2.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/3.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/4.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/5.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/6.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/7.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/8.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/9.jpg') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ url_for('static', filename='img/10.jpg') }}" alt="">
+                    </div>
                 </div>
             </div>
         </section>
