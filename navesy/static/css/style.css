@@ -340,10 +340,6 @@ the website, in dark theme
   height: 2px;
   background-color: var(--first-color);
 }
-.swiper {
-    width: 100%;
-    height: auto;
-}
 
 /*=============== HOME ===============*/
 .home{
@@ -489,6 +485,13 @@ the website, in dark theme
   font-size: 1rem;
   color: var(--first-color);
   margin-top: .15rem;
+}
+
+/*=============== CONTACT ===============*/
+.gallery__container {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    justify-content: self;
+    grid-gap: 4px;
 }
 
 /*=============== CONTACT ===============*/
@@ -698,7 +701,7 @@ the website, in dark theme
 
 /* Show Scroll Up*/
 .show-scroll{
-  bottom: 8rem;
+  bottom: 7rem;
 }
 
 /*=============== SCROLL BAR ===============*/
