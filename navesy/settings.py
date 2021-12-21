@@ -1,5 +1,3 @@
-
-
 class Configuration:
     """ Конфигурация приложения """
     DEBUG = False

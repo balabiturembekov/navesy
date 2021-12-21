@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block title  %}
+Навес - пример готовых изделий - navesy-almaty.kz
+{% endblock  %}
+
+
+{% block content  %}
+<section class="portfolio container" id="portfolio">
+    <h1 class="section__title portfolio__title">Галерея</h1>
+    <div class="portfolio__container grid">
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/1.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/2.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/3.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/4.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/5.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/6.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/7.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/8.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/9.jpg')}}" alt="">
+        </div>
+        <div class="portfolio__item">
+            <img src="{{ url_for('static', filename='img/10.jpg')}}" alt="">
+        </div>
+    </div>
+    
+</section>
+{% endblock  %}

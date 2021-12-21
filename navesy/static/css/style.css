@@ -354,7 +354,7 @@ the website, in dark theme
 .home__img{
   width: 400px;
   justify-self: center;
-  border-radius: .5rem;
+  border-radius: .2rem;
 }
 
 .home__title{
@@ -487,13 +487,33 @@ the website, in dark theme
   margin-top: .15rem;
 }
 
-/*=============== CONTACT ===============*/
+/*=============== Gallery ===============*/
 .gallery__container {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     justify-content: self;
     grid-gap: 4px;
 }
 
+/*=============== Portfolio ===============*/
+.portfolio {
+    padding: 4rem 0;
+}
+
+.portfolio__container {
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 4px;
+}
+
+.portfolio__title {
+    text-align: center;
+}
+
+.portfolio__item {
+}
+
+.portfolio__item img {
+    justify-content: self;
+}
 /*=============== CONTACT ===============*/
 .contact__container{
   row-gap: 3.5rem;
